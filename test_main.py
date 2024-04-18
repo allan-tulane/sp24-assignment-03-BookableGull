@@ -1,11 +1,11 @@
 from main import *
 
 def test_MED():
-    assert fast_MED("kitten", "sitting") == 3
-
-def test_alignment():
-    dist, align_S, align_T = fast_align_MED("relevant", "elephant")
-    print("Distance:", dist)
-    print("Alignment S:", align_S)
-    print("Alignment T:", align_T)
-    assert dist == 4
+    for S, T in test_cases:
+        assert fast_MED(S, T) == MED(S, T)
+                                 
+def test_align():
+    for i in range(len(test_cases)):
+        S, T = test_cases[i]
+        align_S, align_T = fast_align_MED(S, T)
+        assert (align_S == alignments[i][0] and align_T == alignments[i][1])
