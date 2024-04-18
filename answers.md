@@ -10,6 +10,7 @@ Place all written answers from `assignment-03.md` here for easier grading.
 
 
 1a. 
+
 function makeChange(N):
     coin_count = 0
     coins = []
