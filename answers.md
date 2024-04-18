@@ -12,6 +12,7 @@ Place all written answers from `assignment-03.md` here for easier grading.
 1a. 
 
 function makeChange(N):
+
     coin_count = 0
     coins = []
     for k in descending order from floor(log2(N)) to 0:
