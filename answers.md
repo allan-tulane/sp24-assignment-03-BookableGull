@@ -48,6 +48,7 @@ Proof: Lets assume that removing a coin of denomination D from the optimal solut
 
 2c.
 function dynamicChangeMaking(denominations, N):
+
     minCoins = array of size N+1 with all values set to infinity
     minCoins[0] = 0
  
